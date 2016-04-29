@@ -1,0 +1,4 @@
+{var1: "cancer_rate",
+ var2: "tumor_size",
+ fact: ["age", "gender"]
+}

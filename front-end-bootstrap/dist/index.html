@@ -1,0 +1,50 @@
+<!doctype html><html class="no-js" lang=""><head><meta charset="utf-8"><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quantmetry Health Hackathon</title><link rel="icon" type="image/png" href="images/small_logo2.png"><link rel="stylesheet" href="styles/main.css"><script src="scripts/vendor/modernizr.js"></script><script src="scripts/plotly.js"></script><!--
+    <script src="/bower_components/plotly/plotly-latest.min.js"></script>
+    --></head><body><!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><!-- Navigation --><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><div class="container"><!-- Brand and toggle get grouped for better mobile display --><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Quantmetry Health</a></div><!-- Collect the nav links, forms, and other content for toggling --><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><li><a href="#epidemium">About</a></li><li><a href="#team">Team</a></li><li><a href="#contact">Contact</a></li></ul></div><!-- /.navbar-collapse --></div><!-- /.container --></nav><!-- Full Width Image Header --><header class="header-image"><div class="headline"><div class="container"><h1>Hackathon</h1><h2>Visualizing Open Health Data</h2></div></div></header><div class="container"><!--
+    
+    
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">front end bootstrap</h3>
+      </div>
+
+      <div class="jumbotron">
+        <p class="lead">Always a pleasure scaffolding your apps.</p>
+        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+      </div>
+    --><!-- SELECTION PANNEL --><hr class="featurette-divider"><div class="row" id="selection-pannel"><!-- DATA LIST --><div class="col-sm-4"><input type="text" id="data-text-search" class="form-control" placeholder="Search Data"><div id="datalist" class="list-group"></div></div><!-- Filter and Graph Select --><div class="col-sm-8" id="filter-and-plot-selection-pannel"><!-- FILTER --><!--
+                <div class="row" id="filter-selection-pannel">
+                    <p> Ici on va ajouter de quoi filtrer les champs </p>
+                </div>
+                --><!-- PLOT SELECT --><div class="row" id="plot-selection-pannel"><div class="col-sm-12"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Put data here:</h3></div><div class="panel-body" id="datadest"></div></div></div></div><!-- PLOT CREATE --><div class="row" id="plot-selection-pannel"><div class="col-sm-12"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Create Visualization when ready:</h3></div><div class="panel-body" id="datadest3"><button id="createbutton" type="button" class="btn btn-default">Create!</button></div></div></div></div></div><!-- Filter and Graph Select --></div><!-- SELECTION PANNEL --><!--
+        <button type="button" class="btn btn-default" id="start_plot"> Text button </button>
+        --><hr class="featurette-divider"><!-- MAIN PANEL THAT CONTAINS THE PLOTS --><div class="container-fluid" id="main_pannel"><div class="row"><center><button class="text-center btn btn-info" data-toggle="collapse" data-target="#demo">Let us know what you think about this website!</button><div id="demo" class="collapse"><iframe src="https://docs.google.com/forms/d/1Rn00ix9_cQQWpZlJsuAscTascSKt3e58XMKnVkVjm3o/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe></div></center></div></div><!-- First Featurette: EPIDEMIUM --><hr class="featurette-divider smaller"><div class="featurette" id="epidemium"><img class="featurette-image img-circle img-responsive pull-right" src="images/image_epidemium_proper_size.png"><h2 class="featurette-heading">About <span class="text-muted">Challenge 4 Cancer</span></h2><p class="lead">The Quantmetry Health Hackathon takes place in the context of the Challenge 4 Cancer. This challenge is organized by <a href="http://epidemium.cc/">Epidemium</a> and sponsored by <a href="http://www.roche.fr/">Roche</a>.</p><p class="lead">The objective of the challenge is provide further insights on the distrubution and evolution of many categories of cancers. The organizers of the project identified an ensemble of open data sources that could be relevent to this exploration.</p><p class="lead">Our goal for this challenge is to create an interactive website that provides an easy access and representation of available data. At the moment only the core dataset is accessible through our interface. You can find more information on the <a href="http://wiki.epidemium.cc/wiki/Equipe_Quantmetry">wiki page</a> describing this project.</p></div><!-- Second Featurette TEAM--><hr class="featurette-divider smaller"><div class="featurette" id="team"><img class="featurette-image img-circle img-responsive pull-left" src="images/team_small.png"><h2 class="featurette-heading">Team <span class="text-muted"></span></h2><!--
+            <p class="lead">We are four DataScientists from Quantmetry and the roles were split as follows:</p>
+          --><ul class="lead"><li><b>Issam</b> was in charge of data preparation and analysis</li><li><b>Stéphane</b> built a Web API that generates the vizualizations</li><li><b>Long</b> and <b>Benjamin</b> built the interactive front-end</li></ul><p class="lead">We dedicated 2.5 days to this project. The data preparation was done using R package <a href="https://github.com/hadley/dplyr">dplyr</a>. The visualization API is done in R using <a href="https://github.com/trestletech/plumber">Plumber</a>. The front-end uses a <a href="http://getbootstrap.com/">Bootsrap</a> template and <a href="https://jquery.com/">JQuery</a> for the dynamic addition and deletion of graphics. The graphics are generated with <a href="https://plot.ly/">Plotly</a> which has R, Python and Javascript bindings.</p></div><!-- Third Featurette: QUANTMETRY --><hr class="featurette-divider smaller"><div class="featurette" id="contact"><img class="featurette-image img-circle img-responsive pull-right" src="images/quantmetry.png" width="500" height="500"><h2 class="featurette-heading">Contact <span class="text-muted"></span></h2><p class="lead"><a href="http://www.quantmetry.com/">Quantmetry</a> is a DataScience consulting company located in Paris. We use our expertise in Big Data and Data Analytics to help our clients leverage their existing and usually underexploited asset: Data!</p><p class="lead">Feel free to <a href="mailto:bhabert@quantmetry.com">contact us</a> if you want more information about the project or the technology used. Or if you just want to chat!</p></div><!-- OTHER INFORMATION --><!--
+        <div class="row marketing">
+            <div class="col-lg-6">
+              <h4>HTML5 Boilerplate</h4
+              <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+
+              <h4>Sass</h4>
+              <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
+
+              <h4>Bootstrap</h4>
+              <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+              <h4>Modernizr</h4>
+              <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+
+            </div>
+          </div>
+        --><div class="footer"><p></p></div></div><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src="scripts/plugins.js"></script><script src="scripts/main.js"></script></body></html>
